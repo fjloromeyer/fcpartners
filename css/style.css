@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+/* normalizo todo a 0 */
+*{
+    padding:0;
+    margin:0;
+}
+
+header{
+    background-color: blueviolet;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: burlywood;
+}
+
+.nav-bar{
+    text-align: center;
+}
+
+div, p{
+    font-size: 20px;
+}
+
+nav, div, p {
+    font-family: 'Poppins', sans-serif;
+}
+
+footer{
+    background-color: blueviolet;
+}
+
+.copyright {
+    text-align: left;
+}
+
+.socials{
+    text-align: right;
+}
