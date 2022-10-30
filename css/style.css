@@ -1,43 +1,78 @@
+/* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
-
-/* normalizo todo a 0 */
-*{
-    padding:0;
-    margin:0;
-}
-
-header{
-    background-color: blueviolet;
-}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
-}
-
-body{
-    background-color: burlywood;
-}
-
-.nav-bar{
-    text-align: center;
-}
-
-div, p{
-    font-size: 20px;
 }
 
 nav, div, p {
     font-family: 'Poppins', sans-serif;
 }
 
+/* NORMALIZE TO 0 */
+
+*{
+    padding:0;
+    margin:0;
+}
+
+/* HEADER */
+
+header{
+    background-color: blueviolet;
+    width: 100%;
+}
+
+.header-container, .footer-container{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 10px;
+    justify-content: space-between;
+}
+
+.header-right, .header-left, .socials, .copyright{
+    width: 50%;
+}
+
+.nav-bar{
+    text-align: right;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+ul li{
+    list-style-type: none;
+    margin: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* BODY */
+
+body{
+    background-color: burlywood;
+}
+
+div, p{
+    font-size: 20px;
+}
+
+/* FOOTER */
+
 footer{
     background-color: blueviolet;
 }
 
 .copyright {
-    text-align: left;
+    text-align: right;
 }
 
 .socials{
-    text-align: right;
+    text-align: left;
 }
