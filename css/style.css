@@ -1,12 +1,29 @@
-/* FONTS */
+/* FONTS & COLORS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+/* --space-cadet: #283044ff;
+--air-superiority-blue: #78a1bbff;
+--mint-cream: #ebf5eeff;
+--silver-pink: #bfa89eff;
+--cinereous: #8b786dff; */
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
+    color: #78a1bbff;
 }
 
-nav, div, p {
+nav, div, p{
     font-family: 'Poppins', sans-serif;
+    color: #ebf5eeff;
+}
+
+a{
+    text-decoration: none;
+    color: #ebf5eeff
+}
+
+body{
+    background-color: #8b786dff;
 }
 
 /* NORMALIZE TO 0 */
@@ -19,7 +36,7 @@ nav, div, p {
 /* HEADER */
 
 header{
-    background-color: blueviolet;
+    background-color: #8b786dff;
     width: 100%;
 }
 
@@ -32,6 +49,11 @@ header{
 
 .header-right, .header-left, .socials, .copyright{
     width: 50%;
+}
+
+header img{
+    height: 48px;
+    width: 48px;
 }
 
 .nav-bar{
@@ -49,14 +71,11 @@ ul li{
     margin: 5px;
 }
 
-a{
-    text-decoration: none;
-}
-
 /* BODY */
-
-body{
-    background-color: burlywood;
+.main-container{
+    align-items: center;
+    padding: 10px 20px 10px;
+    justify-content: space-between;
 }
 
 div, p{
@@ -66,7 +85,17 @@ div, p{
 /* FOOTER */
 
 footer{
-    background-color: blueviolet;
+    background-color: #8b786dff;
+    width: 100%;
+}
+
+footer img{
+    height: 40px;
+    width: 40px;
+}
+
+footer p{
+    font-size: 14px;
 }
 
 .copyright {
