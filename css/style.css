@@ -1,3 +1,10 @@
+/* NORMALIZE TO 0 */
+
+*{
+    padding:0;
+    margin:0;
+}
+
 /* FONTS & COLORS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
 
@@ -26,14 +33,7 @@ body{
     background-color: #8b786dff;
 }
 
-/* NORMALIZE TO 0 */
-
-*{
-    padding:0;
-    margin:0;
-}
-
-/* HEADER */
+/* HEADER Y FOOTER */
 
 header{
     background-color: #8b786dff;
@@ -47,8 +47,12 @@ header{
     justify-content: space-between;
 }
 
-.header-right, .header-left, .socials, .copyright{
-    width: 50%;
+.header-right, .copyright{
+    width: auto;
+}
+
+.header-left, .socials{
+    width: auto;
 }
 
 header img{
@@ -71,19 +75,6 @@ ul li{
     margin: 5px;
 }
 
-/* BODY */
-.main-container{
-    align-items: center;
-    padding: 10px 20px 10px;
-    justify-content: space-between;
-}
-
-div, p{
-    font-size: 20px;
-}
-
-/* FOOTER */
-
 footer{
     background-color: #8b786dff;
     width: 100%;
@@ -104,4 +95,43 @@ footer p{
 
 .socials{
     text-align: left;
+}
+
+/* BODY */
+.main-container{
+    align-items: center;
+    padding: 10px 20px 10px;
+    justify-content: space-between;
+}
+
+.flex{
+    display: flex;
+}
+
+.center{
+    align-items: center;
+}
+
+.spaced{
+    justify-content: space-between;
+}
+
+.padding-10-20-10{
+    padding: 10px 20px 10px;
+}
+
+.padding-20{
+    padding: 20px;
+}
+
+.padding-50{
+    padding: 50px;
+}
+
+.margin-left-20{
+    margin-left: 20px;
+}
+
+div, p{
+    font-size: 20px;
 }
