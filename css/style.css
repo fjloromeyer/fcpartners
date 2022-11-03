@@ -1,4 +1,4 @@
-/* NORMALIZE TO 0 */
+/* NORMALIZE */
 
 *{
     padding:0;
@@ -6,6 +6,7 @@
 }
 
 /* FONTS & COLORS */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
 
 /* --space-cadet: #283044ff;
@@ -33,7 +34,7 @@ body{
     background-color: #8b786dff;
 }
 
-/* HEADER Y FOOTER */
+/* HEADER AND FOOTER */
 
 header{
     background-color: #8b786dff;
@@ -98,6 +99,7 @@ footer p{
 }
 
 /* BODY */
+
 .main-container{
     align-items: center;
     padding: 10px 20px 10px;
