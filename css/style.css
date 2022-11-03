@@ -108,6 +108,10 @@ footer p{
     display: flex;
 }
 
+.block{
+    display: block;
+}
+
 .center{
     align-items: center;
 }
@@ -140,8 +144,16 @@ footer p{
     width: 40%;
 }
 
+.width-50{
+    width: 50%;
+}
+
 .padding-top300px{
     padding-top: 300px;
+}
+
+.margin-auto{
+    margin: auto;
 }
 
 .margin-left-20px{
