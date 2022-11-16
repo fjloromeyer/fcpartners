@@ -32,6 +32,10 @@ a{
 
 body{
     background-color: #8b786dff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
 }
 
 /* HEADER AND FOOTER */
@@ -126,6 +130,8 @@ footer p{
     height: 95vh;
 }
 
+/* STYLING: PADDING / MARGIN / HEIGHT / WIDTH */
+
 .padding-10-20-10{
     padding: 10px 20px 10px;
 }
@@ -148,6 +154,10 @@ footer p{
 
 .padding-top300px{
     padding-top: 300px;
+}
+
+.padding-top-5{
+    padding-top: 5%;
 }
 
 .width-30{
@@ -213,11 +223,14 @@ div, p{
 
 /* SECTION: ABOUT-US */
 
+.grid-col-span-2{
+    grid-column: span 2;
+}
+
 .about-main-grid{
-    display: grid;
-    width: 100%;
+    display: grid;;
     height: 100%;
-    grid-template-rows: 1fr 1fr;
+    /* grid-template-rows: 1fr 2fr; */
     gap: 20px;
 }
 
@@ -226,24 +239,69 @@ div, p{
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    gap: 100px;
+    gap: 5%;
 }
 
 .about-founders-container{
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 200px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5%;
 }
 
-.candela-spagnoletta-grid{
+.candela-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "candela-img candela-name"
-    "candela-img candela-title"
-    "candela-img candela-title"
-    "candela-intro candela-intro";
+    width: 100%;
+    height: 100%;
+    /* grid-template-areas:
+    "candela-img candela-name-title"
+    "candela-intro candela-intro"; */
+    grid-template-columns: repeat(2, 1fr);
 }
+
+.candela-grid h3{
+    /* grid-area: candela-name-title; */
+    display: flex;
+    align-items: flex-start;
+}
+
+/* .candela-grid img{
+    grid-area: candela-img;
+}
+
+.candela-grid h5{
+    grid-area: candela-name-title;
+}
+
+.candela-grid p{
+    grid-area: candela-intro;
+} */
+
+.federico-grid{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    /* grid-template-areas:
+    "candela-img candela-name-title"
+    "candela-intro candela-intro"; */
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.federico-grid h3{
+    /* grid-area: federico-name-title; */
+    display: flex;
+    align-items: flex-start;
+}
+
+/* .federico-grid img{
+    grid-area: federico-img;
+}
+
+.federico-grid h5{
+    grid-area: federico-name-title;
+}
+
+.federico-grid p{
+    grid-area: federico-intro;
+} */
