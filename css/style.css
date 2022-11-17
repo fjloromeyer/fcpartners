@@ -132,8 +132,12 @@ footer p{
     align-items: center;
 }
 
-.spaced{
+.space-between{
     justify-content: space-between;
+}
+
+.space-around{
+    justify-content: space-around;
 }
 
 .vh95{
@@ -242,6 +246,7 @@ div, p{
     height: 100%;
     /* grid-template-rows: 1fr 2fr; */
     gap: 20px;
+    margin-bottom: 70px; /* must be same as heigth of footer*/
 }
 
 .who-we-are-container{
