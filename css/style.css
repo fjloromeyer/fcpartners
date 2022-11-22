@@ -69,6 +69,14 @@ header img{
     width: 48px;
 }
 
+.header-logo img {
+    transition: transform 0.5s;
+}
+
+.header-logo:hover img {
+    transform: rotate(360deg);
+}
+
 .nav-bar{
     text-align: right;
 }
