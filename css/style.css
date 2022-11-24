@@ -128,6 +128,10 @@ footer p{
     padding: 1rem 2rem 1rem;
     justify-content: space-between;
     margin-bottom: 7rem; /* must be same as heigth of footer*/
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
 }
 
 .flex{
@@ -249,7 +253,7 @@ div, p{
     width: 50%;
 }
 
-/* SECTION: ABOUT-US  */
+/* SECTION: ABOUT-US */
 
 .grid-col-span-2{
     grid-column: span 2;
@@ -334,3 +338,27 @@ div, p{
 .federico-grid p{
     grid-area: federico-intro;
 } */
+
+/* TABLET VIEW */
+
+@media screen and (min-width: 480px) {
+    .body {
+            background-color: #000000;
+      }
+    }
+
+/* LAPTOP VIEW */
+
+@media screen and (min-width: 768px) {
+    .body {
+            background-color: #000000;
+      }
+    }
+
+/* DESKTOP VIEW */
+
+@media screen and (min-width: 1024px) {
+    .body {
+            background-color: #000000;
+      }
+    }
