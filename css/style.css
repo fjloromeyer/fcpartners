@@ -124,18 +124,21 @@ footer p{
 /* BODY */
 
 .main-container{
-    align-items: center;
     padding: 1rem 2rem 1rem;
-    justify-content: space-between;
     margin-bottom: 7rem; /* must be same as heigth of footer*/
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
+}
+
+main img#img-index {
+    display: none;
 }
 
 .flex{
     display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
 }
 
 .block{
@@ -344,21 +347,24 @@ div, p{
 @media screen and (min-width: 480px) {
     .body {
             background-color: #000000;
-      }
     }
+    img {
+        /* display: inline; */
+    }
+}
 
 /* LAPTOP VIEW */
 
 @media screen and (min-width: 768px) {
     .body {
             background-color: #000000;
-      }
     }
+}
 
 /* DESKTOP VIEW */
 
 @media screen and (min-width: 1024px) {
     .body {
-            background-color: #000000;
-      }
+        background-color: #000000;
     }
+}
