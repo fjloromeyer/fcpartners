@@ -44,6 +44,10 @@ body{
     flex-direction: column;
 }
 
+.bg-main-color{
+    background-color: #8b786dff
+}
+
 /* HEADER AND FOOTER */
 
 header{
@@ -71,6 +75,8 @@ header img{
     width: 4.8rem;
 }
 
+/* HOVER ISN'T WORKING WITH THE NEW NAVBAR, IT DOESN'T SPIN WHEN HOVING, ONLY WHEN CLICKING */
+
 .header-logo img {
     transition: transform 0.5s;
 }
@@ -79,8 +85,8 @@ header img{
     transform: rotate(360deg);
 }
 
-.nav-bar{
-    text-align: right;
+.navbar{
+    justify-content: end;
 }
 
 nav ul{
