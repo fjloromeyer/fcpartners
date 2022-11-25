@@ -85,22 +85,26 @@ header img{
     transform: rotate(360deg);
 }
 
-.navbar{
+.navbar {
     justify-content: end;
 }
 
-nav ul{
+.white {
+    color: #ebf5eeff;
+}
+
+nav ul {
     display: flex;
     align-items: center;
     justify-content: end;
 }
 
-ul li{
+ul li {
     list-style-type: none;
     margin: 0.5rem;
 }
 
-footer{
+footer {
     background-color: #8b786dff;
     height: 7rem;
     width: 100%;
@@ -250,7 +254,6 @@ div, p{
 }
 
 .case-study{
-    display: flex;
     align-items: center;
 }
 
@@ -259,7 +262,7 @@ div, p{
 }
 
 .case-study-image-container{
-    width: 50%;
+    display: none;
 }
 
 /* SECTION: ABOUT-US */
@@ -354,9 +357,9 @@ div, p{
     .body {
             background-color: #000000;
     }
-    img {
-        /* display: inline; */
-    }
+    /* img {
+        display: inline;
+    } */
 }
 
 /* LAPTOP VIEW */
@@ -364,6 +367,16 @@ div, p{
 @media screen and (min-width: 768px) {
     .body {
             background-color: #000000;
+    }
+    .case-study {
+        display: flex;
+    }
+    .case-study img {
+        display: inline;
+    }
+    .case-study-image-container{
+        width: 50%;
+        display: inline;
     }
 }
 

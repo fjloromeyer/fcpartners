@@ -4,32 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Services</title>
 </head>
 <body>
     <header>
-        <!-- header's container: company's logo + navigation bar -->
-        <div class="header-container">
-            <div class="header-left">
-                <!-- company's logo -->
+        <!-- navbar with dropdown bootstrap cheatsheet -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-main-color">
+            <div class="container-fluid" bis_skin_checked="1">
                 <div class="header-logo">
-                    <a href="../index.html"><img src="../images/FC_logo.png" alt="cfpartners-logo"></a>
+                    <a class="navbar-brand" href="../index.html"><img src="../images/FC_logo.png" alt="cfpartners-logo"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarWithDropdown" aria-controls="navbarWithDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar collapse navbar-collapse" id="navbarWithDropdown" bis_skin_checked="1">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../sections/about.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../sections/services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../sections/case-studies.html">Case Studies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../sections/contact.html">Contact us</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="header-right">
-                <!-- header's navigation bar -->
-                <nav class="nav-bar">
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../sections/about.html">About us</a></li>
-                        <li><a href="../sections/services.html">Services</a></li>
-                        <li><a href="../sections/case-studies.html">Case Studies</a></li>
-                        <li><a href="../sections/contact.html">Contact us</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+        </nav>
     </header>
     <main>
         <!-- main container: what we do + 4 services (could be more additions) -->
@@ -96,5 +110,9 @@
             <p class="copyright">Copyright © 2022 F&C Partners. All rights reserved.</p>
         </div>
     </footer>
+    <!-- bundle bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 </html>
