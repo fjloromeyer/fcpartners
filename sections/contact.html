@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,13 +11,15 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Contact</title>
 </head>
+
 <body>
     <header>
         <!-- navbar with dropdown bootstrap cheatsheet -->
         <nav class="navbar navbar-expand-md navbar-dark bg-main-color">
             <div class="container-fluid" bis_skin_checked="1">
                 <div class="header-logo">
-                    <a class="navbar-brand" href="../index.html"><img src="../images/FC_logo.png" alt="cfpartners-logo"></a>
+                    <a class="navbar-brand" href="../index.html"><img src="../images/FC_logo.png"
+                            alt="cfpartners-logo"></a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarWithDropdown" aria-controls="navbarWithDropdown" aria-expanded="false"
@@ -38,7 +41,8 @@
                             <a class="nav-link" href="../sections/case-studies.html">Case Studies</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../sections/contact.html">Contact us</a>
+                            <a class="nav-link active" aria-current="page" href="../sections/contact.html">Contact
+                                us</a>
                         </li>
                     </ul>
                 </div>
@@ -47,46 +51,48 @@
     </header>
     <main>
         <!-- main container: contact form -->
-        <div class="main-container flex">
-            <section class="width-50">
+        <div class="contact-us main-container margin-auto">
+            <section class="flex column space-around padding-10-20-10">
                 <h2>
                     Wanna Work Together? Reach Out & Say Hello.
                 </h2>
                 <p>
-                    If there's anything that you'd like to discuss, please don't hesitate to get in touch. Even if it's just to say hello, we look forward to hearing from you!
+                    If there's anything that you'd like to discuss, please don't hesitate to get in touch. Even if it's
+                    just to say hello, we look forward to hearing from you!
                 </p>
-                <h4>
+                <h3>
                     Office
-                </h4>
+                </h3>
                 <p>
                     Carrer de Buenaventura Muñoz, 9,
-                    08018 Barcelona
+                </p>
+                <p>                
+                    08018, Barcelona
+                </p>
+                <p>
                     +34 635 722 756
                 </p>
+                
             </section>
-            <section class="flex width-50 space-around">
-                <form id="contact-form" class="form-class block center" action="">
-                    <div class="form-group">
-                        <label for="Name" class="label">Your name</label>
-                        <div class="input-group">
-                            <input type="text" id="Name" name="Name" class="form-control" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="Email" class="label">Your email</label>
-                        <div class="input-group">
-                            <input type="email" id="Email" name="Email" class="form-control" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="Message" class="label">Your message</label>
-                        <div class="input-group">
-                            <textarea id="Message" name="Message" class="form-control" rows="6" maxlength="3000" required></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" id="button" class="">Send Message</button>
-                    </div>
+            <section class="padding-10-20-10">
+                <div class="form-floating mb-3 bg-dark" bis_skin_checked="1">
+                    <input type="text" class="form-control" required id="floatingInput" placeholder="Name">
+                    <label for="floatingInput">Name</label>
+                </div>
+                <div class="form-floating mb-3" bis_skin_checked="1">
+                    <input type="text" class="form-control" required id="floatingInput" placeholder="Last name">
+                    <label for="floatingInput">Last name</label>
+                </div>
+                <div class="form-floating mb-3" bis_skin_checked="1">
+                    <input type="email" class="form-control" required id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating mb-3" bis_skin_checked="1">
+                    <textarea class="form-control" maxlength="3000" required placeholder="Leave your comment here" id="floatingTextarea" style="height: 100px"></textarea>
+                    <label for="floatingTextarea">Leave your comment here</label>
+                </div>
+                <form class="form-group">
+                    <button type="submit" class="btn btn-outline-light btn-lg">Send Message</button>
                 </form>
             </section>
         </div>
@@ -95,8 +101,10 @@
         <!-- footer's container: company's socials + copyright -->
         <div class="footer-container">
             <section class="socials">
-                <a href="https://www.linkedin.com/" target="_blank" class="social-logo"><img src="../images/linkedin_logo.svg" alt="linkedin_logo"></a>
-                <a href="./contact.html" target="_blank"  class="social-logo"><img src="../images/mail_logo.svg" alt="mail_logo"></a>
+                <a href="https://www.linkedin.com/" target="_blank" class="social-logo"><img
+                        src="../images/linkedin_logo.svg" alt="linkedin_logo"></a>
+                <a href="./contact.html" target="_blank" class="social-logo"><img src="../images/mail_logo.svg"
+                        alt="mail_logo"></a>
             </section>
             <p class="copyright">Copyright © 2022 F&C Partners. All rights reserved.</p>
         </div>
@@ -106,4 +114,5 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
 </body>
+
 </html>

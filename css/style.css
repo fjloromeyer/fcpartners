@@ -147,6 +147,10 @@ main img#img-index {
     display: flex;
 }
 
+.column{
+    flex-direction: column;
+}
+
 .wrap{
     flex-wrap: wrap;
 }
@@ -377,6 +381,9 @@ div, p{
     .case-study-image-container{
         width: 50%;
         display: inline;
+    }
+    .contact-us {
+        max-width: 850px;
     }
 }
 
