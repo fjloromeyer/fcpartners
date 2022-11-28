@@ -27,9 +27,29 @@ h1, h2, h3, h4, h5, h6 {
     color: #78a1bbff;
 }
 
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
 nav, div, p{
     font-family: 'Poppins', sans-serif;
     color: #ebf5eeff;
+}
+
+div, p{
+    font-size: 2rem;
 }
 
 a{
@@ -86,7 +106,7 @@ header img{
 }
 
 .navbar {
-    justify-content: end;
+    justify-content: center;
 }
 
 .white {
@@ -139,9 +159,9 @@ footer p{
     display: grid;
 }
 
-main img#img-index {
+/* main img#img-index {
     display: none;
-}
+} */
 
 .flex{
     display: flex;
@@ -249,12 +269,9 @@ main img#img-index {
     margin-top: 0.5rem;
 }
 
-div, p{
-    font-size: 2rem;
-}
-
-.index-photo{
-    border-radius: 1.5rem 5rem 3rem 0.5rem
+.index-img, .case-studies-img, .services-img, .about-us-img{
+    border-radius: 3rem 3rem 3rem 3rem;
+    display: none;
 }
 
 .case-study{
@@ -263,10 +280,6 @@ div, p{
 
 .case-study-text-container{
     width: auto;
-}
-
-.case-study-image-container{
-    display: none;
 }
 
 /* SECTION: ABOUT-US */
@@ -358,20 +371,23 @@ div, p{
 /* TABLET VIEW */
 
 @media screen and (min-width: 480px) {
-    .body {
-            background-color: #000000;
-    }
     /* img {
         display: inline;
     } */
+    h1 {
+        font-size: 3.2rem;
+    }
+    h2 {
+        font-size: 2.7rem;
+    }
+    h3 {
+        font-size: 2.2rem;
+    }
 }
 
 /* LAPTOP VIEW */
 
 @media screen and (min-width: 768px) {
-    .body {
-            background-color: #000000;
-    }
     .case-study {
         display: flex;
     }
@@ -385,12 +401,20 @@ div, p{
     .contact-us {
         max-width: 850px;
     }
+    .navbar {
+        justify-content: end;
+    }
+
+    .index-img, .case-studies-img, .sevices-img, .about-us-img {
+        display: block;
+    }
 }
 
 /* DESKTOP VIEW */
 
 @media screen and (min-width: 1024px) {
-    .body {
-        background-color: #000000;
+    body, footer {
+        max-width: 1024px;
+        margin: auto;
     }
 }
