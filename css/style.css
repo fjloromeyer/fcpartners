@@ -280,6 +280,7 @@ footer p{
 
 .case-study-text-container{
     width: auto;
+    padding: 20px;
 }
 
 /* SECTION: ABOUT-US */
@@ -404,9 +405,11 @@ footer p{
     .navbar {
         justify-content: end;
     }
-
-    .index-img, .case-studies-img, .sevices-img, .about-us-img {
+    .index-img, .case-studies-img, .services-img, .about-us-img {
         display: block;
+    }
+    .services-what-we-do-container {
+        margin-left: 2rem;
     }
 }
 
