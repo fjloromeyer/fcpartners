@@ -267,9 +267,13 @@ footer p{
     height: 95vh;
 }
 
-.index-img, .case-studies-img, .services-img, .about-us-img{
+.index-img, .case-studies-img, .services-img{
     border-radius: 3rem 3rem 3rem 3rem;
     display: none;
+}
+
+.about-us-img{
+    border-radius: 3rem 3rem 3rem 3rem;
 }
 
 .case-study{
@@ -306,11 +310,8 @@ footer p{
 }
 
 .about-founders-container{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5%;
+    display: flex;
+    flex-direction: column;
     padding: 1rem 2rem 1rem;
     margin-bottom: 7rem;
 }
@@ -349,6 +350,15 @@ footer p{
     }
     .about-us-img {
         display: block;
+    }
+    .about-founders-container{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5%;
+        padding: 1rem 2rem 1rem;
+        margin-bottom: 7rem;
     }
 }
 
