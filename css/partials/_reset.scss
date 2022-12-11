@@ -2,3 +2,9 @@
     padding:0;
     margin:0;
 }
+
+html{
+    min-height: 100%;
+    position: relative;
+    font-size: 62.5%; /* 62.5% of 16px = 10px --> 1rem = 10px*/
+}

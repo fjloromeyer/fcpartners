@@ -1,68 +1,59 @@
 @import "./partials/reset";
 @import "./partials/variables";
 
-
-/* color palette:
---space-cadet: #283044ff;
---air-superiority-blue: #78a1bbff;
---mint-cream: #ebf5eeff;
---silver-pink: #bfa89eff;
---cinereous: #8b786dff; */
-
-html{
-    min-height: 100%;
-    position: relative;
-    font-size: 62.5%; /* 62.5% of 16px = 10px --> 1rem = 10px*/
-}
-
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
-    color: #78a1bbff;
+    font-family: $font-family-titles;
+    color: $air-superiority-blue;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: $font-size*2.5;
+    @media(min-width: 480px){
+        font-size: $font-size*3.2;
+    }
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: $font-size*2;
+    @media(min-width: 480px){
+        font-size: $font-size*2.7;
+    }
 }
 
 h3 {
-    font-size: 1.5rem;
-}
-
-p {
-    font-size: 1rem;
+    font-size: $font-size*1.5;
+    @media(min-width: 480px){
+        font-size: $font-size*2.2;
+    }
 }
 
 nav, div, p{
-    font-family: 'Poppins', sans-serif;
-    color: #ebf5eeff;
+    font-family: $font-family-text;
+    color: $mint-cream;
 }
 
 div, p{
-    font-size: 2rem;
+    font-size: $font-size*2;
 }
 
 a{
     text-decoration: none;
-    color: #ebf5eeff
+    color: $mint-cream
 }
 
 body{
-    background-color: #8b786dff;
+    background-color: $cinereous;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 .bg-main-color{
-    background-color: #8b786dff
+    background-color: $cinereous;
 }
 
 .white {
-    color: #ebf5eeff;
+    color: $mint-cream;
 }
 
 /* STYLING: PADDING / MARGIN / HEIGHT / WIDTH */
@@ -100,23 +91,23 @@ body{
 }
 
 .width-30{
-    width: 30%;
+    width: $full-width*0.3;
 }
 
 .width-40{
-    width: 40%;
+    width: $full-width*0.4;
 }
 
 .width-50{
-    width: 50%;
+    width: $full-width*0.5;
 }
 
 .width-70{
-    width: 70%;
+    width: $full-width*0.7;
 }
 
 .width-100{
-    width: 100%;
+    width: $full-width;
 }
 
 .width-auto{
@@ -146,8 +137,12 @@ body{
 /* HEADER AND FOOTER */
 
 header{
-    background-color: #8b786dff;
+    background-color: $cinereous;
     width: 100%;
+    img{
+        height: $height*4.8;
+        width: $width*4.8;
+    }
 }
 
 .header-container, .footer-container{
@@ -157,29 +152,24 @@ header{
     justify-content: space-between;
 }
 
-.header-right, .copyright{
+.header-right, .copyright, .header-left, .socials{
     width: auto;
 }
 
-.header-left, .socials{
-    width: auto;
-}
-
-header img{
-    height: 4.8rem;
-    width: 4.8rem;
-}
-
-.header-logo img {
-    transition: transform 0.5s;
-}
-
-.header-logo:hover img {
-    transform: rotate(360deg);
+.header-logo{
+    img{
+        transition: transform 0.5s;
+    }
+    &:hover img{
+        transform: rotate(360deg);
+    }
 }
 
 .navbar {
     justify-content: center;
+    @media (min-width: 768px) {
+        justify-content: end;
+    }
 }
 
 nav ul {
@@ -194,22 +184,20 @@ ul li {
 }
 
 footer {
-    background-color: #8b786dff;
-    height: 7rem;
+    background-color: $cinereous;
+    height: $height*7;
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-}
-
-footer img{
-    height: 4rem;
-    width: 4rem;
-}
-
-footer p{
-    font-size: 1.4rem;
+    img{
+        height: 4rem;
+        width: 4rem;
+    }
+    p{
+        font-size: $font-size*1.4;
+    }
 }
 
 .copyright {
@@ -260,17 +248,29 @@ footer p{
     height: 95vh;
 }
 
-.index-img, .case-studies-img, .services-img{
-    border-radius: 3rem 3rem 3rem 3rem;
-    display: none;
+.about-us-img{
+    border-radius: $border-radius;
+    @media(min-width: 480px) {
+        display: block;
+    }
 }
 
-.about-us-img{
-    border-radius: 3rem 3rem 3rem 3rem;
+.index-img, .case-studies-img, .services-img{
+    @extend .about-us-img;
+    display: none;
+    @media(min-width: 768px) {
+        display: block;
+    }
 }
 
 .case-study{
     align-items: center;
+    @media(min-width: 768px) {
+        display: flex;
+        img {
+            display: inline;
+        }
+    }
 }
 
 .case-study-text-container-1, .case-study-text-container-2, .case-study-text-container-3{
@@ -286,86 +286,62 @@ footer p{
 
 .about-main-container{
     display: block;
-    /* height: 100%; */
     margin-bottom: 7rem; /* must be same as heigth of footer*/
+    @media (min-width: 768px) {
+        display: grid;
+        gap: 2rem;
+    }
 }
 
 .about-who-we-are-container{
-    width: 100%;
-    height: 100%;
+    @include sizes(100%,100%);
     display: flex;
     gap: 5%;
     padding: 1rem 2rem 1rem;
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
 }
 
 .about-who-we-are-left{
     display: none;
+    @media (min-width: 768px) {
+        display: block;
+    }
 }
 
 .about-founders-container{
+    @extend .main-container;
     display: flex;
     flex-direction: column;
-    padding: 1rem 2rem 1rem;
-    margin-bottom: 7rem;
-}
-
-.candela-grid{
-    display: inline;
-}
-
-.candela-grid h3{
-    display: flex;
-    align-items: flex-start;
-}
-
-.federico-grid{
-    display: inline;
-    width: 100%;
-    height: 100%;
-}
-
-.federico-grid h3{
-    display: flex;
-    align-items: flex-start;
-}
-
-/* TABLET VIEW */
-
-@media screen and (min-width: 480px) {
-    h1 {
-        font-size: 3.2rem;
-    }
-    h2 {
-        font-size: 2.7rem;
-    }
-    h3 {
-        font-size: 2.2rem;
-    }
-    .about-us-img {
-        display: block;
-    }
-    .about-founders-container{
-        width: 100%;
-        height: 100%;
+    @media (min-width: 480px){
+        @include sizes(100%,100%);
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 5%;
-        padding: 1rem 2rem 1rem;
-        margin-bottom: 7rem;
+    }
+}
+
+.candela-grid, .federico-grid{
+    display: inline;
+    @media (min-width: 768px){
+        @include sizes(100%,100%);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5%;
+    }
+    h3 {
+        display: flex;
+        align-items: flex-start;
     }
 }
 
 /* LAPTOP VIEW */
 
 @media screen and (min-width: 768px) {
-    .case-study {
-        display: flex;
-    }
-    .case-study img {
-        display: inline;
-    }
     .case-study-image-container{
-        width: 50%;
+        width: $full-width*0.5;
         display: inline;
     }
     .case-study-text-container-2 {
@@ -376,36 +352,8 @@ footer p{
     .contact-us {
         max-width: 850px;
     }
-    .navbar {
-        justify-content: end;
-    }
-    .index-img, .case-studies-img, .services-img, .about-who-we-are-left{
-        display: block;
-    }
     .services-what-we-do-container {
         margin-left: 2rem;
-    }
-    .about-main-container{
-        display: grid;
-        gap: 2rem;
-    }
-    .about-who-we-are-container{
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-    }
-    .candela-grid{
-        display: grid;
-        width: 100%;
-        height: 100%;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5%;
-    }
-    .federico-grid{
-        display: grid;
-        width: 100%;
-        height: 100%;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5%;
     }
 }
 

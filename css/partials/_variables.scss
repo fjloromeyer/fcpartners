@@ -1,1 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+/* color palette: */
+$space-cadet: #283044ff;
+$air-superiority-blue: #78a1bbff;
+$mint-cream: #ebf5eeff;
+$silver-pink: #bfa89eff;
+$cinereous: #8b786dff; 
+
+$font-family-titles: 'Roboto', sans-serif;
+$font-family-text: 'Poppins', sans-serif;
+$font-size: 1rem;
+
+$width: 1rem;
+$height: 1rem;
+$full-width: 100%;
+$full-height: 100%;
+
+$border-radius: 3rem 3rem 3rem 3rem;
+
+@mixin sizes ($width, $height){
+    width: 1*$width; //changing the number on the front it is possible to change every width across the project.
+    height: 1*$height; //changing the number on the front it is possible to change every height across the project.
+}
