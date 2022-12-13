@@ -1,0 +1,28 @@
+footer {
+    background-color: $cinereous;
+    height: $height*7;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    @media (min-width: 1024px) {
+        max-width: 1024px;
+        margin: auto;
+    }
+    img{
+        height: 4rem;
+        width: 4rem;
+    }
+    p{
+        font-size: $font-size*1.4;
+    }
+}
+
+.copyright {
+    text-align: right;
+}
+
+.socials{
+    text-align: left;
+}

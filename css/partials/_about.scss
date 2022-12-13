@@ -1,0 +1,63 @@
+.about-us-img{
+    border-radius: $border-radius;
+    @media(min-width: 480px) {
+        display: block;
+    }
+}
+
+.grid-col-span-2{
+    grid-column: span 2;
+}
+
+.about-main-container{
+    display: block;
+    margin-bottom: 7rem; /* must be same as heigth of footer*/
+    @media (min-width: 768px) {
+        display: grid;
+        gap: 2rem;
+    }
+}
+
+.about-who-we-are-container{
+    @include sizes(100%,100%);
+    display: flex;
+    gap: 5%;
+    padding: 1rem 2rem 1rem;
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+}
+
+.about-who-we-are-left{
+    display: none;
+    @media (min-width: 768px) {
+        display: block;
+    }
+}
+
+.about-founders-container{
+    @extend .main-container;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 480px){
+        @include sizes(100%,100%);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5%;
+    }
+}
+
+.candela-grid, .federico-grid{
+    display: inline;
+    @media (min-width: 768px){
+        @include sizes(100%,100%);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5%;
+    }
+    h3 {
+        display: flex;
+        align-items: flex-start;
+    }
+}

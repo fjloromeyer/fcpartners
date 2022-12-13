@@ -1,0 +1,14 @@
+.case-study{
+    align-items: center;
+    @media(min-width: 768px) {
+        display: flex;
+        img {
+            display: inline;
+        }
+    }
+}
+
+.case-study-text-container-1, .case-study-text-container-2, .case-study-text-container-3{
+    width: auto;
+    padding: 20px;
+}
